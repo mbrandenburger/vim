@@ -12,7 +12,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 "--- Look&Feel ---
 Plug 'bling/vim-airline'
-Plug 'chriskempson/base16-vim'
+"Plug 'chriskempson/base16-vim'
 "--- Git ---
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -86,8 +86,8 @@ set wildignore+=*.o,*.so,*.a,*.swp,*.zip,*.pyc,tags
 
 set background=dark
 set t_ut=
-let base16colorspace=256
-colors base16-flat
+
+colorscheme jellybeans
 
 nnoremap <C-L>             :bn<CR>
 nnoremap <C-H>             :bp<CR>
@@ -175,8 +175,8 @@ let g:tagbar_type_haskell = {
 \ }
 
 "--- vim-airline ---
-let g:Powerline_symbols = 'fancy'
-let g:airline_powerline_fonts = 1
+"let g:Powerline_symbols = 'fancy'
+"let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme='base16'
@@ -192,6 +192,7 @@ autocmd bufread *.hs setlocal omnifunc=necoghc#omnifunc
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:ycm_path_to_python_interpreter = "/usr/local/bin/python"
 
 "--- UltiSnips ---
 let g:UltiSnipsExpandTrigger="<c-j>"
