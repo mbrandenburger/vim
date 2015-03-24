@@ -16,6 +16,10 @@ Plug 'bling/vim-airline'
 "--- Git ---
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+"--- Latex ---
+Plug 'coot/atp_vim'
+"--- R  ---
+Plug 'vim-scripts/Vim-R-plugin'
 "--- Programming ---
 Plug 'honza/vim-snippets'
 Plug 'majutsushi/tagbar'
@@ -179,7 +183,7 @@ let g:tagbar_type_haskell = {
 "let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme='base16'
+"let g:airline_theme='base16'
 let g:airline#extensions#whitespace#enabled = 0
 
 "--- vim-markdown ---
@@ -201,3 +205,9 @@ let g:UltiSnipsSnippetDirectories=["plugged/vim-snippets/UltiSnips"]
 set modeline
 set exrc
 set secure
+
+"--- DISABLE ARROW KEYS ---
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
