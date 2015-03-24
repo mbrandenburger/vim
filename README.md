@@ -1,6 +1,9 @@
 README
 ======
 
+This is a fork of https://bitbucket.org/kmARC/vim
+Thanks Mark for your vim help!
+
 Setting up on a new host
 ------------------------
 
